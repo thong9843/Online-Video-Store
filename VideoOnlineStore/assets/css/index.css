@@ -1,0 +1,84 @@
+.hero {
+    position: relative;
+    background-image: url('https://evgroup.vn/wp-content/uploads/2024/04/thiet_bi_rap_phim_06.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1, .hero p {
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.slideshow {
+    padding: 20px;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+.slideshow h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.slideshow-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slideshow-container {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.slide img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.slide h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.slideshow-wrapper:hover .slideshow-container {
+    animation-play-state: paused;
+}

@@ -1,0 +1,149 @@
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Account Page Styles */
+    .account-page {
+        display: flex; 
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        width: 250px; 
+        padding: 20px;
+        background-color: #fff;
+        border-right: 1px solid #ddd;
+    }
+
+    .sidebar h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        color: #4CAF50; 
+    }
+
+    .content {
+        flex: 1; 
+        padding: 20px;
+    }
+
+    .content h2 {
+        margin-bottom: 20px;
+    }
+
+    /* Form Styles */
+    .account-page form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .account-page form input[type="text"],
+    .account-page form input[type="email"],
+    .account-page form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .account-page form button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .account-page form button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    /* Purchased Videos Table Styles */
+    .order-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .order-item {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 4px;
+        background-color: #fafafa;
+    }
+    
+    .order-header {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .order-details {
+        display: none;
+        margin-top: 10px;
+    }
+    
+    .order-details.show {
+        display: block;
+    }
+    
+    .toggle-details {
+        background-color: #007BFF;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .toggle-details:hover {
+        background-color: #0056b3;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f0f0f0;
+    }
